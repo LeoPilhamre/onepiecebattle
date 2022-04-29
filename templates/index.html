@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATTLE</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="box">
+        <p>Villard</p>
+        <p>{{ animeVillard['progress'] }}</p>
+        <a href="https://zoro.to/watch/one-piece-100?ep={{ animeVillard['progress'] + 2142 }}">WATCH</a>
+        <span>{{ animeVillard['score'] }}</span>
+    </div>
+    <div id="border">
+        <p>vs.</p>
+    </div>
+    <div class="box">
+        <p>Mexbot</p>
+        <p>{{ animeMexbot['progress'] }}</p>
+        <a href="https://zoro.to/watch/one-piece-100?ep={{ animeVillard['progress'] + 2142 }}">WATCH</a>
+        <span>{{ animeMexbot['score'] }}</span>
+    </div>
+</body>
+</html>

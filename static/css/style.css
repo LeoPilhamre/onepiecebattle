@@ -1,0 +1,95 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: rgb(246, 185, 254);
+}
+
+body, body * {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    right: auto;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.box:last-child {
+    left: auto;
+    right: 0;
+}
+.box > * {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box p:first-child {
+    top: 15%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+.box p:not(p:first-child) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 249, 138);
+    font-weight: bold;
+    font-size: 12.5vw;
+}
+.box a {
+    position: absolute;
+    top: 80%;
+    padding: 10px;
+    max-height: 60px;
+    max-width: 20%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+}
+.box a:hover {
+    border: 2px solid rgb(117, 239, 218);
+    background-color: rgb(117, 239, 218);
+}
+.box span {
+    color: rgba(98, 98, 98, 0.197);
+    text-align: center;
+    left: 10%;
+    line-height: 100vh;
+    font-weight: bold;
+    font-size: 80vw;
+    z-index: -1;
+}
+
+#border {
+    position: absolute;
+    width: 2vw;
+    height: 100vh;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .5;
+}
+#border p {
+    right: 5vw;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(98, 98, 98);
+    font-weight: bold;
+    font-size: 12vw;
+}
